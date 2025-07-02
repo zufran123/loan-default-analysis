@@ -32,7 +32,54 @@ PDF reporting
 
 Streamlit app deployment
 
-GitHub documentation and version control
+GitHub documentation and version control.
+
+⚠️ Challenges Faced :
+-> Ensuring the model handled imbalanced class distributions effectively, where defaults are typically less frequent than non-defaults.
+
+-> Avoiding overfitting in tree-based models like Random Forest due to a small, synthetic dataset.
+
+-> Generating realistic synthetic data while maintaining variability and meaningful feature relationships.
+
+-> Handling compatibility issues across Python, NumPy, and scikit-learn versions during local testing and packaging.
+
+-> Maintaining modularity across data generation, model training, reporting, and UI components.
+
+⚖️ Data Imbalance Considerations
+-> In real-world financial data, default cases are often underrepresented. To simulate this behavior:
+
+-> The dataset was synthetically generated with a 75:25 split between non-defaulters and defaulters.
+
+-> This helped mimic practical class imbalance and test model generalizability on minority classes.
+
+Note: In future versions, advanced techniques such as SMOTE (Synthetic Minority Oversampling) or cost-sensitive learning could be introduced.
+
+🚀 Future Improvements
+-> Integrate SHAP or LIME for model interpretability and feature attribution.
+
+-> Add a live database backend (e.g., SQLite, Firebase, or PostgreSQL) to log all predictions.
+
+-> Incorporate email integration to send PDF reports directly to applicants.
+
+-> Add user authentication for secure multi-user access.
+
+-> Expand model training with hyperparameter tuning using GridSearchCV or Optuna.
+
+-> Add Streamlit Cloud multi-page structure (sidebar navigation).
+
+☁️ Streamlit Deployment Experience
+The complete app was deployed on Streamlit Cloud, allowing for real-time interaction with the model through a modern, browser-accessible interface.
+
+Deployment involved:
+
+-> Structuring the codebase for cloud readiness (requirements.txt, fixed paths)
+
+-> Testing compatibility across Python versions and external libraries
+
+-> Streamlining model size, folder structure, and app performance for smooth hosting
+
+The live version is accessible at:
+🔗 https://zufran123-loan-default-analysis.streamlit.app
 
 ---
 
