@@ -35,6 +35,7 @@ Streamlit app deployment
 GitHub documentation and version control.
 
 ⚠️ Challenges Faced :
+
 -> Ensuring the model handled imbalanced class distributions effectively, where defaults are typically less frequent than non-defaults.
 
 -> Avoiding overfitting in tree-based models like Random Forest due to a small, synthetic dataset.
@@ -45,7 +46,8 @@ GitHub documentation and version control.
 
 -> Maintaining modularity across data generation, model training, reporting, and UI components.
 
-⚖️ Data Imbalance Considerations
+⚖️ Data Imbalance Considerations :
+
 -> In real-world financial data, default cases are often underrepresented. To simulate this behavior:
 
 -> The dataset was synthetically generated with a 75:25 split between non-defaulters and defaulters.
@@ -54,7 +56,8 @@ GitHub documentation and version control.
 
 Note: In future versions, advanced techniques such as SMOTE (Synthetic Minority Oversampling) or cost-sensitive learning could be introduced.
 
-🚀 Future Improvements
+🚀 Future Improvements :
+
 -> Integrate SHAP or LIME for model interpretability and feature attribution.
 
 -> Add a live database backend (e.g., SQLite, Firebase, or PostgreSQL) to log all predictions.
@@ -70,7 +73,7 @@ Note: In future versions, advanced techniques such as SMOTE (Synthetic Minority 
 ☁️ Streamlit Deployment Experience
 The complete app was deployed on Streamlit Cloud, allowing for real-time interaction with the model through a modern, browser-accessible interface.
 
-Deployment involved:
+Deployment involved :
 
 -> Structuring the codebase for cloud readiness (requirements.txt, fixed paths)
 
