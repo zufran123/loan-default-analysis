@@ -79,7 +79,7 @@ Deployment involved:
 -> Streamlining model size, folder structure, and app performance for smooth hosting
 
 The live version is accessible at:
-🔗 https://zufran123-loan-default-analysis.streamlit.app
+[![View on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://zufran123-loan-default-analysis.streamlit.app)
 
 ---
 
