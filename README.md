@@ -224,6 +224,12 @@ streamlit run app/streamlit_app.py
 
 ---
 
+### Streamlit app link
+
+https://loan-default-analysis-9j2xbauaxybjictfznm4cm.streamlit.app/
+
+---
+
 ## 👨‍💻 Author
 
 **Mohd Zufran**  
