@@ -232,7 +232,7 @@ Explore the fully interactive Streamlit application here:
 ## 👨‍💻 Author
 
 **Mohd Zufran**  
-🔗 [LinkedIn](https://linkedin.com/in/mohdzufran)
+[![LinkedIn: mohdzufran](https://img.shields.io/badge/LinkedIn-mohdzufran-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/mohdzufran)
 
 ---
 
