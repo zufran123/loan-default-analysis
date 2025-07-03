@@ -220,7 +220,7 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## 🔗 Live Demo
+##  Live Demo
 
 Explore the fully interactive Streamlit application here:
 
