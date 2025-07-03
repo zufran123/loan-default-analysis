@@ -4,7 +4,6 @@
 [![Stars](https://img.shields.io/github/stars/zufran123/loan-default-analysis.svg?style=social)](https://github.com/zufran123/loan-default-analysis/stargazers)
 [![Forks](https://img.shields.io/github/forks/zufran123/loan-default-analysis.svg?style=social)](https://github.com/zufran123/loan-default-analysis/network/members)
 [![Last Commit](https://img.shields.io/github/last-commit/zufran123/loan-default-analysis.svg)](https://github.com/zufran123/loan-default-analysis/commits/main)
-[![View on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://zufran123-loan-default-analysis.streamlit.app) 
 
 ---
 
