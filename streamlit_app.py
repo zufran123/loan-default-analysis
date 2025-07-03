@@ -2,52 +2,51 @@ import streamlit as st
 import pandas as pd
 import joblib
 import os
-import sys
-from datetime import datetime
 
-# Fix path to import generate_report.py from parent folder
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from generate_report import generate_pdf_report
-
-st.set_page_config(page_title="Loan Default Risk App", layout="centered")
-
+st.set_page_config(page_title="Loan Default Prediction", layout="wide")
 st.title("🏦 Loan Default Risk Prediction App")
-st.markdown("Enter applicant information to predict the default risk.")
+
+# Debug
+st.write("✅ App loaded")
+
+# Load data
+@st.cache_data
+def load_data():
+    st.write("📊 Loading data...")
+    return pd.read_csv("data/loan_data.csv")
 
 # Load model
-model_path = "model/loan_default_model.pkl"
-if os.path.exists(model_path):
-    model = joblib.load(model_path)
-else:
-    st.error("Model file not found. Please train the model and save it to 'model/loan_default_model.pkl'")
+@st.cache_resource
+def load_model():
+    st.write("🧠 Loading model...")
+    return joblib.load("model/loan_default_model.pkl")
+
+# Try loading everything
+try:
+    df = load_data()
+    model = load_model()
+except Exception as e:
+    st.error(f"❌ Error during load: {e}")
     st.stop()
 
+st.success("✅ Model and data loaded successfully!")
+
+# Show data preview
+with st.expander("📄 View Dataset"):
+    st.dataframe(df.head())
+
 # Input fields
-age = st.slider("Age", 18, 75, 30)
-income = st.number_input("Annual Income (in ₹)", min_value=10000, step=1000)
-loan_amount = st.number_input("Loan Amount (in ₹)", min_value=1000, step=500)
-credit_score = st.slider("Credit Score", 300, 900, 650)
-loan_term = st.number_input("Loan Term (in months)", min_value=6, max_value=360, step=6)
+st.header("📥 Enter Applicant Details")
+user_input = {}
+for col in df.drop(columns=["Default"]).columns:
+    dtype = df[col].dtype
+    if dtype == 'object':
+        user_input[col] = st.selectbox(col, df[col].unique())
+    else:
+        user_input[col] = st.number_input(col, value=float(df[col].mean()))
 
-if st.button("🔍 Predict Default Risk"):
-    input_data = pd.DataFrame([{
-        'Age': age,
-        'AnnualIncome': income,
-        'LoanAmount': loan_amount,
-        'CreditScore': credit_score,
-        'LoanTerm': loan_term
-    }])
-
-    prediction = model.predict(input_data)[0]
-    risk = "🔴 High Risk of Default" if prediction == 1 else "🟢 Low Risk of Default"
-    
-    st.subheader("Prediction Result:")
-    st.info(risk)
-
-    # PDF Report Button
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"reports/loan_risk_report_{timestamp}.pdf"
-    generate_pdf_report(input_data, prediction, filename)
-
-    with open(filename, "rb") as f:
-        st.download_button("📄 Download PDF Report", f, file_name=os.path.basename(filename), mime="application/pdf")
+# Predict
+if st.button("🔍 Predict Loan Default Risk"):
+    input_df = pd.DataFrame([user_input])
+    prediction = model.predict(input_df)[0]
+    st.markdown(f"### 🔎 Prediction: {'❌ Will Default' if prediction == 1 else '✅ Will Not Default'}")
