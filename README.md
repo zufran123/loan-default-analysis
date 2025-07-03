@@ -226,8 +226,7 @@ streamlit run app/streamlit_app.py
 
 ### Streamlit app link
 
-🔗 [Streamlit]
-(https://loan-default-analysis-9j2xbauaxybjictfznm4cm.streamlit.app/)
+🔗 [Streamlit App](https://zufran123-loan-default-analysis.streamlit.app)
 
 ---
 
