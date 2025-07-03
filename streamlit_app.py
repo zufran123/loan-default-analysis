@@ -16,7 +16,7 @@ st.markdown("Enter applicant information to predict the default risk.")
 
 # Load model
 model_path = "model/loan_default_model.pkl"
-if os.path.exists(model_path)
+if os.path.exists(model_path):
     model = joblib.load(model_path)
 else:
     st.error("Model file not found. Please train the model and save it to 'model/loan_default_model.pkl'")
