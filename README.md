@@ -4,6 +4,8 @@
 [![Stars](https://img.shields.io/github/stars/zufran123/loan-default-analysis.svg?style=social)](https://github.com/zufran123/loan-default-analysis/stargazers)
 [![Forks](https://img.shields.io/github/forks/zufran123/loan-default-analysis.svg?style=social)](https://github.com/zufran123/loan-default-analysis/network/members)
 [![Last Commit](https://img.shields.io/github/last-commit/zufran123/loan-default-analysis.svg)](https://github.com/zufran123/loan-default-analysis/commits/main)
+[![Data Source](https://img.shields.io/badge/Data-Kaggle-blue?style=flat)](https://www.kaggle.com/)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=zufran123.e-learning-analysis)
 
 ---
 
