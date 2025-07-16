@@ -222,11 +222,11 @@ streamlit run app/streamlit_app.py
 
 ---
 
-##  Live Demo
+## 🚀 Live Demo
 
 Explore the fully interactive Streamlit application here:
 
-👉 [![View on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://zufran123-loan-default-analysis.streamlit.app) 
+👉 [![View on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://loan-default-analysis-9j2xbauaxybjictfznm4cm.streamlit.app)
 
 ---
 
