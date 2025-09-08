@@ -13,15 +13,15 @@ The Loan Default Risk Analysis project predicts the likelihood of loan applicant
 ---
 
 ⚠️ Challenges Faced :
--> Ensuring the model handled imbalanced class distributions effectively, where defaults are typically less frequent than non-defaults.
+-> Handled class imbalance in defaults vs. non-defaults
 
--> Avoiding overfitting in tree-based models like Random Forest due to a small, synthetic dataset.
+-> Prevented overfitting in tree-based models on limited synthetic data
 
--> Generating realistic synthetic data while maintaining variability and meaningful feature relationships.
+-> Generated realistic synthetic da with meaningful variability
 
--> Handling compatibility issues across Python, NumPy, and scikit-learn versions during local testing and packaging.
+-> Resolved library compatibility issues (Python, NumPy, scikit-learn)
 
--> Maintaining modularity across data generation, model training, reporting, and UI components.
+-> Ensured modular design across data, model, reporting, and UI components
 
 ⚖️ Data Imbalance Considerations
 -> In real-world financial data, default cases are often underrepresented. To simulate this behavior:
@@ -35,17 +35,11 @@ The Loan Default Risk Analysis project predicts the likelihood of loan applicant
 Note: In future versions, advanced techniques such as SMOTE (Synthetic Minority Oversampling) or cost-sensitive learning could be introduced.
 
 🚀 Future Improvements
--> Integrate SHAP or LIME for model interpretability and feature attribution.
+-> Improve model with SHAP/LIME for interpretability and hyperparameter tuning (GridSearchCV/Optuna)
 
--> Add a live database backend (e.g., SQLite, Firebase, or PostgreSQL) to log all predictions.
+-> Extend system with database logging, email report delivery, and user authentication
 
--> Incorporate email integration to send PDF reports directly to applicants.
-
--> Add user authentication for secure multi-user access.
-
--> Expand model training with hyperparameter tuning using GridSearchCV or Optuna.
-
--> Add Streamlit Cloud multi-page structure (sidebar navigation).
+-> Upgrade app with a multi-page Streamlit Cloud structure and sidebar navigation
 
 ---
 
