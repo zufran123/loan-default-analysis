@@ -8,8 +8,8 @@
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=zufran123.e-learning-analysis)
 
 ---
-
 The Loan Default Risk Analysis project predicts the likelihood of loan applicants defaulting using borrower data such as income, credit score, loan amount, and term. Built with Python, Scikit-learn, Streamlit, and FPDF, it applies a Random Forest Classifier for robust performance and evaluates results with accuracy, precision, recall, and F1-score. An interactive Streamlit app enables real-time risk predictions and generates downloadable PDF reports, simulating a practical credit scoring pipeline for lenders while showcasing skills in machine learning, model evaluation, and deployment.
+
 ---
 
 ⚠️ Challenges Faced :
