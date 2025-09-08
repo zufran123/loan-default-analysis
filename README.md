@@ -11,29 +11,7 @@
 
 This Loan Default Risk Analysis project is a complete, data-driven machine learning solution designed to assess and predict the likelihood of a loan applicant defaulting on their loan. It simulates a real-world financial decision-making process by incorporating key personal and financial attributes of borrowers and applying a classification model to evaluate risk. Built using Python and widely adopted data science libraries such as Pandas, NumPy, Scikit-learn, Streamlit, and FPDF, the project covers the full ML lifecycle — from dataset creation and preprocessing to model training, evaluation, and interactive deployment via a web app. The workflow begins with the generation and loading of a synthetic loan applicant dataset, followed by cleaning, feature preparation, and the training of a Random Forest Classifier. This model is chosen for its robustness and ability to handle nonlinear relationships and feature importance analysis. To ensure interpretability and transparency, the model’s predictions are exposed via an interactive Streamlit-based user interface, which allows users to input hypothetical applicant data (e.g., age, annual income, credit score, loan amount, loan term) and receive a real-time risk prediction. Furthermore, the app automatically generates and allows downloading of a PDF report summarizing the user's input and the model's prediction — useful for documentation or stakeholder sharing.
 
-This system simulates a practical credit scoring pipeline that could be used by lending institutions, microfinance organizations, or credit analysts to:
-
-Pre-qualify applicants
-
-Identify high-risk borrowers
-
-Automate parts of the loan screening process
-
-The model performance is evaluated using key metrics such as accuracy, precision, recall, and F1-score, giving a rounded view of how well the classifier distinguishes between defaulters and non-defaulters.
-
-By streamlining both the predictive backend and user-facing interface, this project demonstrates the real-world application of data science and machine learning in financial risk assessment, showcasing the potential for automating decision pipelines while maintaining interpretability and user interaction.
-
-Ultimately, this project not only highlights the power of machine learning in making informed loan decisions but also serves as a portfolio-ready showcase of technical skills in:
-
-Data analysis
-
-Model training and evaluation
-
-PDF reporting
-
-Streamlit app deployment
-
-GitHub documentation and version control.
+This system simulates a practical credit scoring pipeline that could be used by lending institutions, microfinance organizations, or credit analysts to Pre-qualify applicants, Identify high-risk borrowers, Automate parts of the loan screening process). The model performance is evaluated using key metrics such as accuracy, precision, recall, and F1-score, giving a rounded view of how well the classifier distinguishes between defaulters and non-defaulters. By streamlining both the predictive backend and user-facing interface, this project demonstrates the real-world application of data science and machine learning in financial risk assessment, showcasing the potential for automating decision pipelines while maintaining interpretability and user interaction. Ultimately, this project not only highlights the power of machine learning in making informed loan decisions but also serves as a portfolio-ready showcase of technical skills in(Data analysis, Model training and evaluation, PDF reporting, Streamlit app deployment, & GitHub documentation and version control).
 
 ⚠️ Challenges Faced :
 -> Ensuring the model handled imbalanced class distributions effectively, where defaults are typically less frequent than non-defaults.
