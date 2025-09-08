@@ -12,7 +12,7 @@ The Loan Default Risk Analysis project predicts the likelihood of loan applicant
 
 ---
 
-⚠️ Challenges Faced :
+## ⚠️ Challenges Faced :
 - Handled class imbalance in defaults vs. non-defaults
 - Prevented overfitting in tree-based models on limited synthetic data
 - Generated realistic synthetic da with meaningful variability
@@ -28,14 +28,14 @@ The Loan Default Risk Analysis project predicts the likelihood of loan applicant
 
 Note: In future versions, advanced techniques such as SMOTE (Synthetic Minority Oversampling) or cost-sensitive learning could be introduced.
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 - Improve model with SHAP/LIME for interpretability and hyperparameter tuning (GridSearchCV/Optuna)
 - Extend system with database logging, email report delivery, and user authentication
 - Upgrade app with a multi-page Streamlit Cloud structure and sidebar navigation
 
 ---
 
-☁️ Streamlit Deployment Experience
+## ☁️ Streamlit Deployment Experience
 The complete app was deployed on Streamlit Cloud, allowing for real-time interaction with the model through a modern, browser-accessible interface.
 
 Deployment involved:
