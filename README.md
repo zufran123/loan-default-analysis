@@ -13,6 +13,8 @@ This Loan Default Risk Analysis project is a complete, data-driven machine learn
 
 This system simulates a practical credit scoring pipeline that could be used by lending institutions, microfinance organizations, or credit analysts to Pre-qualify applicants, Identify high-risk borrowers, Automate parts of the loan screening process). The model performance is evaluated using key metrics such as accuracy, precision, recall, and F1-score, giving a rounded view of how well the classifier distinguishes between defaulters and non-defaulters. By streamlining both the predictive backend and user-facing interface, this project demonstrates the real-world application of data science and machine learning in financial risk assessment, showcasing the potential for automating decision pipelines while maintaining interpretability and user interaction. Ultimately, this project not only highlights the power of machine learning in making informed loan decisions but also serves as a portfolio-ready showcase of technical skills in(Data analysis, Model training and evaluation, PDF reporting, Streamlit app deployment, & GitHub documentation and version control).
 
+---
+
 ⚠️ Challenges Faced :
 -> Ensuring the model handled imbalanced class distributions effectively, where defaults are typically less frequent than non-defaults.
 
@@ -31,6 +33,8 @@ This system simulates a practical credit scoring pipeline that could be used by 
 
 -> This helped mimic practical class imbalance and test model generalizability on minority classes.
 
+---
+
 Note: In future versions, advanced techniques such as SMOTE (Synthetic Minority Oversampling) or cost-sensitive learning could be introduced.
 
 🚀 Future Improvements
@@ -45,6 +49,8 @@ Note: In future versions, advanced techniques such as SMOTE (Synthetic Minority 
 -> Expand model training with hyperparameter tuning using GridSearchCV or Optuna.
 
 -> Add Streamlit Cloud multi-page structure (sidebar navigation).
+
+---
 
 ☁️ Streamlit Deployment Experience
 The complete app was deployed on Streamlit Cloud, allowing for real-time interaction with the model through a modern, browser-accessible interface.
