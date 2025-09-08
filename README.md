@@ -13,33 +13,25 @@ The Loan Default Risk Analysis project predicts the likelihood of loan applicant
 ---
 
 ⚠️ Challenges Faced :
--> Handled class imbalance in defaults vs. non-defaults
-
--> Prevented overfitting in tree-based models on limited synthetic data
-
--> Generated realistic synthetic da with meaningful variability
-
--> Resolved library compatibility issues (Python, NumPy, scikit-learn)
-
--> Ensured modular design across data, model, reporting, and UI components
+- Handled class imbalance in defaults vs. non-defaults
+- Prevented overfitting in tree-based models on limited synthetic data
+-Generated realistic synthetic da with meaningful variability
+-Resolved library compatibility issues (Python, NumPy, scikit-learn)
+-Ensured modular design across data, model, reporting, and UI components
 
 ⚖️ Data Imbalance Considerations
--> In real-world financial data, default cases are often underrepresented. To simulate this behavior:
-
--> The dataset was synthetically generated with a 75:25 split between non-defaulters and defaulters.
-
--> This helped mimic practical class imbalance and test model generalizability on minority classes.
+-In real-world financial data, default cases are often underrepresented. To simulate this behavior:
+-The dataset was synthetically generated with a 75:25 split between non-defaulters and defaulters.
+-This helped mimic practical class imbalance and test model generalizability on minority classes.
 
 ---
 
 Note: In future versions, advanced techniques such as SMOTE (Synthetic Minority Oversampling) or cost-sensitive learning could be introduced.
 
 🚀 Future Improvements
--> Improve model with SHAP/LIME for interpretability and hyperparameter tuning (GridSearchCV/Optuna)
-
--> Extend system with database logging, email report delivery, and user authentication
-
--> Upgrade app with a multi-page Streamlit Cloud structure and sidebar navigation
+-Improve model with SHAP/LIME for interpretability and hyperparameter tuning (GridSearchCV/Optuna)
+-Extend system with database logging, email report delivery, and user authentication
+-Upgrade app with a multi-page Streamlit Cloud structure and sidebar navigation
 
 ---
 
@@ -48,11 +40,9 @@ The complete app was deployed on Streamlit Cloud, allowing for real-time interac
 
 Deployment involved:
 
--> Structuring the codebase for cloud readiness (requirements.txt, fixed paths)
-
--> Testing compatibility across Python versions and external libraries
-
--> Streamlining model size, folder structure, and app performance for smooth hosting.
+-Structuring the codebase for cloud readiness (requirements.txt, fixed paths)
+-Testing compatibility across Python versions and external libraries
+-Streamlining model size, folder structure, and app performance for smooth hosting.
 
 ---
 
